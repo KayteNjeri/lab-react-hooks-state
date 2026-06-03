@@ -1,11 +1,14 @@
 import React from 'react'
 
-const DarkModeToggle = () => {
+const DarkModeToggle = ({ darkMode, toggleDarkMode }) => {
   // TODO: Implement dark mode toggle logic
 
   return (
-    <button>Toggle Dark Mode {/* TODO: Update this text from Dark to Light dynamically */}</button>
-  )
+    <button onClick={toggleDarkMode}>
+      Toggle {darkMode ? "Light Mode" : "Dark Mode"}
+       {/* TODO: Update this text from Dark to Light dynamically */}
+       </button>
+  );
 }
 
 export default DarkModeToggle

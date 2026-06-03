@@ -1,4 +1,4 @@
-#root {
+#app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +39,40 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.app {
+  background-color: #ffffff;
+  color: #111827;
+  min-height: 100vh;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.app.dark {
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.app button {
+  background-color: #e5e7eb;
+  color: #111827;
+}
+
+.app.dark button {
+  background-color: #374151;
+  color: #f9fafb;
+}
+
+select {
+  padding: 6px;
+  margin-left: 10px;
 }
